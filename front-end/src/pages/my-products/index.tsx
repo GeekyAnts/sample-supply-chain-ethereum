@@ -28,7 +28,7 @@ export function MyProductsPage() {
 
   useEffect(() => {
     getMyProducts();
-    listenToEvent();
+    // listenToEvent();
   }, []);
   const listenToEvent = async () => {
     SupplyChainService.eventContract.on(

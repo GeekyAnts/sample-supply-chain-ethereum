@@ -63,7 +63,7 @@ export const SaleModal = ({
     <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
       <Modal.Content maxWidth="400px">
         <Modal.CloseButton />
-        <Modal.Header>Details for sale</Modal.Header>
+        <Modal.Header>Sell Product</Modal.Header>
         <Modal.Body>
           <HStack mb={1} space={3} alignItems="center">
             <Avatar
@@ -72,7 +72,8 @@ export const SaleModal = ({
               size="xl"
               source={{
                 uri: productSelected.productImage,
-              }}>
+              }}
+            >
               RB
             </Avatar>
             <VStack maxWidth="70%">
@@ -82,28 +83,32 @@ export const SaleModal = ({
                 fontWeight="semibold"
                 fontSize={[15, 18]}
                 maxWidth="100%"
-                wordBreak="break-all">
+                wordBreak="break-all"
+              >
                 {productSelected.name}
               </Text>
               <Text
                 fontSize={["10", "sm"]}
                 fontWeight="light"
                 textTransform="uppercase"
-                color="coolGray.500">
+                color="coolGray.500"
+              >
                 {productSelected.barcodeId}
               </Text>
               <Text
                 fontSize={["8", "xs"]}
                 fontWeight="thin"
                 textTransform="uppercase"
-                color="coolGray.600">
+                color="coolGray.600"
+              >
                 mfg {epochToDate(productSelected.manDateEpoch)}
               </Text>
               <Text
                 fontSize={["8", "xs"]}
                 fontWeight="thin"
                 textTransform="uppercase"
-                color="coolGray.600">
+                color="coolGray.600"
+              >
                 expires in{" "}
                 {getNumberOfDays(
                   productSelected.manDateEpoch,
@@ -127,7 +132,8 @@ export const SaleModal = ({
               onValueChange={(text) => {
                 text === "new-user" ? navigate("/add-user") : selectUser(text);
                 setSelectedUser(text);
-              }}>
+              }}
+            >
               {addedUserList &&
                 addedUserList.map((person) => (
                   <Select.Item
