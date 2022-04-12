@@ -25,22 +25,24 @@ export const AllProducts = () => {
 
   const listenToEvent = async () => {
     console.log("add p event");
-    SupplyChainService.eventContract.on(
-      "newProduct",
-      async (
-        name,
-        manufacturerName,
-        scientificName,
-        barcodeId,
-        manDateEpoch,
-        expDateEpoch,
-        event
-      ) => {
-        console.log("name", event);
-        getProducts();
-        toastSuccess("New Product successfully added");
-      }
-    );
+    SupplyChainService.getInstance()
+      .getContract()
+      .on(
+        "newProduct",
+        async (
+          name,
+          manufacturerName,
+          scientificName,
+          barcodeId,
+          manDateEpoch,
+          expDateEpoch,
+          event
+        ) => {
+          console.log("name", event);
+          getProducts();
+          toastSuccess("New Product successfully added");
+        }
+      );
   };
 
   useEffect(() => {

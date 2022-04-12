@@ -28,26 +28,28 @@ export function MyProductsPage() {
 
   useEffect(() => {
     getMyProducts();
-    // listenToEvent();
+    listenToEvent();
   }, []);
   const listenToEvent = async () => {
-    SupplyChainService.eventContract.on(
-      "productOwnershipTransfer",
-      async (
-        name,
-        manufacturerName,
-        scientificName,
-        barcodeId,
-        buyerName,
-        buyerEmail,
-        event
-      ) => {
-        console.log("event", name);
+    SupplyChainService.getInstance()
+      .getContract()
+      .on(
+        "productOwnershipTransfer",
+        async (
+          name,
+          manufacturerName,
+          scientificName,
+          barcodeId,
+          buyerName,
+          buyerEmail,
+          event
+        ) => {
+          console.log("event", name);
 
-        getMyProducts();
-        toastSuccess("New Product successfully added");
-      }
-    );
+          getMyProducts();
+          toastSuccess("New Product successfully added");
+        }
+      );
   };
 
   useEffect(() => {

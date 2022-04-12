@@ -21,12 +21,11 @@ export function AddUserPage() {
     listenToEvent();
   }, []);
   const listenToEvent = async () => {
-    SupplyChainService.eventContract.on(
-      "newUser",
-      async (name, email, role, event) => {
+    SupplyChainService.getInstance()
+      .getContract()
+      .on("newUser", async (name, email, role, event) => {
         getUserList();
-      }
-    );
+      });
   };
 
   function handleSearch(text: string) {

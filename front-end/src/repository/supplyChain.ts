@@ -12,7 +12,6 @@ export class SupplyChainService {
   private static instance: SupplyChainService;
   private _supplyChainContract!: Contract;
   private _accountAdress: string | undefined;
-  static eventContract: Contract;
 
   // private constructor() {
   //   this._supplyChainContract = this.getContract(CONTRACT_ADDRESS);
@@ -41,8 +40,7 @@ export class SupplyChainService {
         params: [{ chainId: `0x${Number(4).toString(16)}` }],
       });
       this._accountAdress = accounts[0];
-      this._supplyChainContract = this.getContract(CONTRACT_ADDRESS);
-      SupplyChainService.eventContract = this._supplyChainContract;
+      this._supplyChainContract = this.getContract();
       return true;
     } catch (error) {
       console.log(error);
@@ -54,10 +52,10 @@ export class SupplyChainService {
     return await this.checkedWallet();
   }
 
-  getContract(contractAddress: string) {
+  getContract() {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer = provider.getSigner();
-    return new ethers.Contract(contractAddress, ContractABI["abi"], signer);
+    return new ethers.Contract(CONTRACT_ADDRESS, ContractABI["abi"], signer);
   }
   async getMyDetails(): Promise<UserDetails> {
     try {
