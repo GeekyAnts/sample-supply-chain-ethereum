@@ -34,7 +34,17 @@ By managing the supply chain, companies can cut excess costs and deliver product
 ## How it works
 
 <p align="center">
-  <img width="460"  src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/supply-chain.jpg?raw=true">
+  <img width="460"  
+      alt='supply-chain-flowdiagram'
+       src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/supply-chain-flow-diagram.jpg?raw=true">
+</p>
+
+## How the product ownership get transfer
+
+<p align="center">
+  <img width="460"  
+      alt='supply-chain-flowdiagram'
+       src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/product-ownership-transfer.jpg?raw=true">
 </p>
 
 ### Supply Chain Objects
