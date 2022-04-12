@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma experimental ABIEncoderV2;
-pragma solidity ^0.8.0;
+pragma solidity >=0.4.25 <0.9.0;
 
-import "./Users.sol";
+import "./Types.sol";
 
 /**
  * @title Products
  * @author Suresh Konakanchi | GeekyAnts
  * @dev Library for managing products
  */
-contract Products is Users {
+contract Products {
     Types.Product[] internal products;
     mapping(string => Types.Product) internal product;
     mapping(address => string[]) internal userLinkedProducts;
@@ -70,7 +70,6 @@ contract Products is Users {
      */
     function addAProduct(Types.Product memory product_, uint256 currentTime_)
         internal
-        onlyManufacturer
         productNotExists(product_.barcodeId)
     {
         require(
@@ -103,10 +102,9 @@ contract Products is Users {
     function sell(
         address partyId_,
         string memory barcodeId_,
+        Types.UserDetails memory party_,
         uint256 currentTime_
     ) internal productExists(barcodeId_) {
-        require(isPartyExists(partyId_), "Party not found");
-        Types.UserDetails memory party_ = Users.users[partyId_];
         Types.Product memory product_ = product[barcodeId_];
 
         // Updating product history
@@ -140,23 +138,6 @@ contract Products is Users {
     // Modifiers
 
     /**
-     * @notice To check if the party is manufacturer
-     */
-    modifier onlyManufacturer() {
-        require(msg.sender != address(0), "Sender's address is Empty");
-        require(
-            Users.users[msg.sender].id_ != address(0),
-            "User's address is Empty"
-        );
-        require(
-            Types.UserRole(Users.users[msg.sender].role) ==
-                Types.UserRole.Manufacturer,
-            "Only manufacturer can add"
-        );
-        _;
-    }
-
-    /**
      * @notice To check if product exists
      * @param id_ product barcode ID
      */
@@ -175,17 +156,6 @@ contract Products is Users {
     }
 
     // Internal functions
-
-    /**
-     * @dev To check if the party/user exists or not
-     * @param account Address of the user/party to be verified
-     */
-    function isPartyExists(address account) internal view returns (bool) {
-        bool existing_;
-        if (account == address(0)) return existing_;
-        if (Users.users[account].id_ != address(0)) existing_ = true;
-        return existing_;
-    }
 
     /**
      * @dev To remove the product from current list once sold

@@ -3,6 +3,7 @@ pragma experimental ABIEncoderV2;
 pragma solidity >=0.4.25 <0.9.0;
 
 import "./Products.sol";
+import "./Users.sol";
 
 /**
  * @title SupplyChain
@@ -63,6 +64,7 @@ contract SupplyChain is Users, Products {
      */
     function addProduct(Types.Product memory product_, uint256 currentTime_)
         public
+        onlyManufacturer
     {
         addAProduct(product_, currentTime_);
     }
@@ -78,7 +80,9 @@ contract SupplyChain is Users, Products {
         string memory barcodeId_,
         uint256 currentTime_
     ) public {
-        sell(partyId_, barcodeId_, currentTime_);
+        require(isPartyExists(partyId_), "Party not found");
+        Types.UserDetails memory party_ = users[partyId_];
+        sell(partyId_, barcodeId_, party_, currentTime_);
     }
 
     /**

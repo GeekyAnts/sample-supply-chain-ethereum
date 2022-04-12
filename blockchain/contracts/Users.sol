@@ -132,6 +132,19 @@ contract Users {
         emit lostUser(name_, email_, role);
     }
 
+    // Internal Functions
+
+    /**
+     * @dev To check if the party/user exists or not
+     * @param account Address of the user/party to be verified
+     */
+    function isPartyExists(address account) internal view returns (bool) {
+        bool existing_;
+        if (account == address(0)) return existing_;
+        if (users[account].id_ != address(0)) existing_ = true;
+        return existing_;
+    }
+
     /**
      * @dev check if an account has this role
      * @param role UserRole that need to be checked
@@ -146,5 +159,21 @@ contract Users {
         require(account != address(0));
         return (users[account].id_ != address(0) &&
             users[account].role == role);
+    }
+
+    // Modifiers
+
+    /**
+     * @notice To check if the party is manufacturer
+     */
+    modifier onlyManufacturer() {
+        require(msg.sender != address(0), "Sender's address is Empty");
+        require(users[msg.sender].id_ != address(0), "User's address is Empty");
+        require(
+            Types.UserRole(users[msg.sender].role) ==
+                Types.UserRole.Manufacturer,
+            "Only manufacturer can add"
+        );
+        _;
     }
 }
