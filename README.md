@@ -240,3 +240,5 @@ _Note Revert back all your local configurations & configure it to point to rinke
 
 <br>
 <img src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/product-detail-history.png?raw=true"><br>
+<br>
+<img src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/product-history.png?raw=true"><br>
