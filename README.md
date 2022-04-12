@@ -1,7 +1,7 @@
 ## Pfizer's Supply Chain Management (Life saving drugs)
 
 <p align="center">
-  <img width="600"  src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/home.png?raw=true">
+  <img width="100%"  src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/home.png?raw=true">
 </p>
 
 https://hbr.org/2020/05/building-a-transparent-supply-chain // Take reference for article Pushkar
