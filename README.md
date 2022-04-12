@@ -200,13 +200,42 @@ _Note Revert back all your local configurations & configure it to point to rinke
 
         npm start
 
-## How frontend works
+# How frontend works
 
+## Pfizer Home
+
+<br>
 <img src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/home.png?raw=true"><br>
+<br>
+
+## Pfizer Products
+
+<br>
 <img src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/products.png?raw=true"><br>
+<br>
+
+## Add Users according to Role and View all added Users
+
+<br>
 <img src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/add-view-users.png?raw=true"><br>
+<br>
+
+## Product Add Form by Manufacturer
+
+<br>
 <img src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/addproduct-1.png?raw=true"><br>
+<br>
 
 <img src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/addproduct-2.png?raw=true"><br>
-<img src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/sell-product.png?raw=true"><br>
+<br>
+
+## Products Sell according to User's role
+
+<br>
+<img src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/sell_product.png?raw=true"><br>
+<br>
+
+## Products details and History
+
+<br>
 <img src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/product-detail-history.png?raw=true"><br>
