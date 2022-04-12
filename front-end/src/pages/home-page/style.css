@@ -1,0 +1,33 @@
+.image-bg {
+  background-image: url("https://cdn.pfizer.com/pfizercom/2021-12/banner_section/Pfizer-Brand-Motif-09%202.jpg?nkl9Vff2xgScPSri_q.vfus7iiczlIIv");
+  background-size: cover;
+  background-position: center;
+  height: 89vh;
+  background-attachment: fixed;
+  padding: 0;
+}
+
+.explore-button {
+  padding: 1.5rem 2.5rem;
+  font-size: 1.3rem;
+  border-radius: 50px;
+  text-transform: capitalize;
+  background: none;
+  border: 2px solid #0000c9;
+  color: #0000c9;
+  cursor: pointer;
+}
+
+.explore-button:hover {
+  background: #0000c9;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .image-bg {
+    height: 95vh;
+  }
+  .cast-vote-button {
+    width: 40%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}

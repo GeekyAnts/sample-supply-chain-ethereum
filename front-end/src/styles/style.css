@@ -1,0 +1,48 @@
+.icon {
+  font-size: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.theme-color {
+  color: #a3a3a3;
+}
+.theme-color:hover {
+  color: #0000c9;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link-active {
+  margin-top: 5px;
+  text-decoration: none;
+  color: #0000c9;
+  border-bottom: 4px solid #0000c9;
+}
+
+.icon-active {
+  text-decoration: none;
+  color: #0000c9;
+}
+
+.date-class {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.timeline-card {
+  position: relative;
+}
+
+@media all and (max-width: 768px) {
+  .icon {
+    font-size: 1.5rem;
+  }
+}
