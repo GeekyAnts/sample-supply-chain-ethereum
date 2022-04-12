@@ -33,6 +33,10 @@ By managing the supply chain, companies can cut excess costs and deliver product
 
 ## How it works
 
+<p align="center">
+  <img width="460"  src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/supply-chain-flow.jpg?raw=true">
+</p>
+
 ### Supply Chain Objects
 
 ```c++
