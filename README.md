@@ -34,11 +34,12 @@ By managing the supply chain, companies can cut excess costs and deliver product
 - Vendors can only add Customers to the database and sell the products to Customers.
 - All the user roles should have mandatory metamask address on the network except Customers. Customers may or may not have meta mask address.
 - Product details and supply chain lifecycle should be public to all the users.
+- The User who deploy the contract to the main net will be considered as Manufacturer.
 
 ## How it works
 
 <p align="center">
-  <img width="600"  
+  <img width="100%"  
       alt='supply-chain-flowdiagram'
        src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/supply-chain-flow-diagram.jpg?raw=true">
 </p>
@@ -46,12 +47,12 @@ By managing the supply chain, companies can cut excess costs and deliver product
 ## How the product ownership get transfer
 
 <p align="center">
-  <img width="600"  
+  <img width="100%"  
       alt='supply-chain-flowdiagram'
        src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/product-ownership-transfer.jpg?raw=true">
 </p>
 
-# Let's start with E-Voting Smart Contracts
+# Let's start with Supply-Chain-Management Smart Contracts
 
 [Do platform Setup! ](SETUP.md)
 
