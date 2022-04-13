@@ -1,4 +1,4 @@
-## Pfizer's Supply Chain Management (Life saving drugs)
+## Pfizer's Supply Chain Management (Life-saving drugs)
 
 <p align="center">
   <img width="100%"  src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/home.png?raw=true">
