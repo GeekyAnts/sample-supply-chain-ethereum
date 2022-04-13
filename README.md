@@ -4,8 +4,6 @@
   <img width="100%"  src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/home.png?raw=true">
 </p>
 
-https://hbr.org/2020/05/building-a-transparent-supply-chain // Take reference for article Pushkar
-
 ## Problem
 
 Lack of vaccine monitoring bodies can hamper purchase, delivery, monitoring, and transparency in the VSC. Supply chains around the globe are confronting significant interruption, and the lack of correspondence between supply chain members can impede a proper production and distribution of the COVID-19 vaccine.
@@ -14,13 +12,15 @@ Lack of vaccine monitoring bodies can hamper purchase, delivery, monitoring, and
 
 By managing the supply chain, companies can cut excess costs and deliver products to the consumer faster.
 
--- From article
+Since 1990's thanks to the use of enterprise resource planning (ERP) systems considerable advancement in supply chain information sharing has taken place in last 3 decades. However, visibility remains a challenge in large supply chains involving complex transactions.
+
+Let us consider a scenario, a simple transaction involving a manufacturer that sources a product to a supplier, and a vendor that sources the product from supplier and later sell it to customers. However in the flow from manufacturer to supplier to vendor the financial institutions which are key to financing are in a blind spot. The transaction involves information flows, inventory flows, and financial flows. The state-of-the-art ERP systems, manual audits, and inspections can’t reliably connect all the flows, which makes it hard to eliminate execution errors, improve decision-making, and resolve supply chain conflicts. The below diagram depicts the difference between conventional record keeping in supply chain management against blockchain. [Read more](https://hashnode.com/preview/62567d35b32ddd968bbecfdf)
 
 ### Implementation of Supply Chain Management:
 
 ### Required:
 
-- Users Role: Manufacturer, Suppliers, Vendors & Costomers
+- Users Role: Manufacturer, Suppliers, Vendors & Customers
 - Smart Contract consisting of all the rules and protocols required for Supply chain Management. We have created 2 contacts for Users and Products, and inherited those contract within main supply-chain contract.
 - Blockchain Network to deploy the Contract. We have used Rinkeby for our contract.
 - Website for user Interface where Users according to their role can access informfation. We have created webpage with React & Native Base.
