@@ -1,6 +1,5 @@
 var HDWalletProvider = require("@truffle/hdwallet-provider");
-const mnemonic =
-  "36d672185862dc7ac9971efc9b27a75b7405ae92396d899cb41e339ea628795c";
+const mnemonic = "WALLET_PRIVATE_KEY";
 
 module.exports = {
   plugins: ["truffle-security"],
@@ -12,16 +11,15 @@ module.exports = {
       provider: () =>
         new HDWalletProvider({
           privateKeys: [mnemonic],
-          providerOrUrl:
-            "https://rinkeby.infura.io/v3/e0c0649106b74055b75eabebb028bc5f",
+          providerOrUrl: "https://rinkeby.infura.io/v3/INFURA_PROJECT_ID",
           numberOfAddresses: 1,
         }),
       network_id: 4,
       gas: 10000000, // Max is 10000000
-      confirmations: 5,
+      confirmations: 4,
       timeoutBlocks: 200,
       skipDryRun: true,
-      networkCheckTimeout: 1000000,
+      networkCheckTimeout: 5000000,
       // maxFeePerGas: 10,
       // maxPriorityFeePerGas: 10,
     },
@@ -29,7 +27,7 @@ module.exports = {
       host: "127.0.0.1",
       port: 7545,
       network_id: "*", // Match any network id
-      gas: 6721975, // Use `gas` & `gasPrice` only if creating type 0 transactions
+      gas: 10000000, // Use `gas` & `gasPrice` only if creating type 0 transactions
       gasPrice: 20000000000, // (20 Gwei) All gas values specified in wei
       maxFeePerGas: 10, // Use only if creating type 2 transactions
       maxPriorityFeePerGas: 10, // Use only if creating type 2 transactions

@@ -240,7 +240,7 @@ access it using a web app.
 
 **Web App**
 
-1. Open **src/repository/ballot.ts** file. This is the typescript file
+1. Open **src/repository/supplyChain.ts** file. This is the typescript file
    that interacts with the contract.
 
 2. Change the configuration file with contract details at
@@ -251,7 +251,7 @@ access it using a web app.
    section click on copy button to copy your ABI code.
 
 4. Go to
-   **src/repository/Ballot.json** file and paste it replacing entire json
+   **src/repository/SupplyChain.json** file and paste it replacing entire json
 
 5. Run
    **npm install && npm start** to open the web app.

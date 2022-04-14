@@ -1,14 +1,21 @@
-## Pfizer's Supply Chain Management (Life-saving drugs)
-
 <p align="center">
   <img width="100%"  src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/home.png?raw=true">
 </p>
 
-## Problem
+## Important Links
+
+1. [Demo link](https://geekyants.page.link/supplychain)<br />
+2. [Contract Address](https://rinkeby.etherscan.io/address/0x343eB4bcC8344819fab52Fa86bBBAC3F7f9b4Eb5)<br />
+3. [Contract Creator](https://rinkeby.etherscan.io/address/0xf2c9ef86c3c98fc8c265469624da35af2d72fa06)<br />
+4. [Tx Hash of contract creation](https://rinkeby.etherscan.io/tx/0x5497693608f7b1236546256a8e0c9317ea0f1737844d02883821ca667ff638de)<br />
+
+## Pfizer's Supply Chain Management (Life-saving drugs)
+
+### Problem
 
 Lack of vaccine monitoring bodies can hamper purchase, delivery, monitoring, and transparency in the VSC. Supply chains around the globe are confronting significant interruption, and the lack of correspondence between supply chain members can impede a proper production and distribution of the COVID-19 vaccine.
 
-## Solution
+### Solution
 
 By managing the supply chain, companies can cut excess costs and deliver products to the consumer faster.
 
@@ -16,7 +23,7 @@ Since 1990's thanks to the use of enterprise resource planning (ERP) systems con
 
 Let us consider a scenario, a simple transaction involving a manufacturer that sources a product to a supplier, and a vendor that sources the product from supplier and later sell it to customers. However in the flow from manufacturer to supplier to vendor the financial institutions which are key to financing are in a blind spot. The transaction involves information flows, inventory flows, and financial flows. The state-of-the-art ERP systems, manual audits, and inspections can’t reliably connect all the flows, which makes it hard to eliminate execution errors, improve decision-making, and resolve supply chain conflicts. The below diagram depicts the difference between conventional record keeping in supply chain management against blockchain. [Read more](https://hashnode.com/preview/62567d35b32ddd968bbecfdf)
 
-### Implementation of Supply Chain Management:
+## Implementation of Supply Chain Management:
 
 ### Required:
 
@@ -25,7 +32,7 @@ Let us consider a scenario, a simple transaction involving a manufacturer that s
 - Blockchain Network to deploy the Contract. We have used Rinkeby for our contract.
 - Website for user Interface where Users according to their role can access informfation. We have created webpage with React & Native Base.
 
-## Assumptions:
+### Assumptions:
 
 - One Manufacturer. Here we took Pfizer reference for the critical Life Saving drugs Manufacturer.
 - Only Manufacturer can add the products to Inventory.
@@ -139,17 +146,9 @@ Let us consider a scenario, a simple transaction involving a manufacturer that s
 
 Compiler: solc: 0.8.12+commit.f00d7308
 
-Truffle: v5.5.2
+Truffle: v5.5.5
 
 Node: v14.17.0
-
-### Deployed to Rinkeby
-
-Contract Address: https://rinkeby.etherscan.io/address/0xB6976cfdA272536c51b0F251855EDa48164485EF
-
-Contract Creator: https://rinkeby.etherscan.io/address/0xF2C9ef86c3c98Fc8C265469624dA35af2D72Fa06
-
-Tx Hash of contract creation :https://rinkeby.etherscan.io/tx/0x6e0f54b7579fc6e9fcd00aa37d182ab2896471461f46ca09a21f63368bf12eb4
 
 ### Quick Start
 
@@ -158,7 +157,7 @@ Tx Hash of contract creation :https://rinkeby.etherscan.io/tx/0x6e0f54b7579fc6e9
         cd sample-supply-chain-ethereum
         cd blockchain
 
-2.  download node libraries
+2.  download truffle dependencies
 
         npm install
 
@@ -201,27 +200,39 @@ _Note Revert back all your local configurations & configure it to point to rinke
 
         npm start
 
+## Team ✨
+
+Meet the amazing team who developed this project.
+
+<table>
+  <tr>
+    <td align="center"><a href="https://in.linkedin.com/in/sur950"><img src="https://avatars.githubusercontent.com/u/46712434?v=4" width="100px;" alt=""/><br /><sub><b>Suresh Konakanchi</b></sub></a><br /><a href="https://github.com/GeekyAnts/sample-supply-chain-ethereum" title="Code">💻</a> <a href="https://geekyants.github.io/sample-supply-chain-ethereum/" title="Documentation">📖</a> <a href="https://github.com/GeekyAnts/sample-supply-chain-ethereum/issues" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://twitter.com/95pushkar"><img src="https://avatars.githubusercontent.com/u/41522922?v=4" width="100px;" alt=""/><br /><sub><b>Pushkar Kumar</b></sub></a><br /><a href="https://github.com/GeekyAnts/sample-supply-chain-ethereum" title="Code">💻</a> <a href="https://geekyants.github.io/sample-supply-chain-ethereum/" title="Documentation">📖</a> <a href="https://github.com/GeekyAnts/sample-supply-chain-ethereum/issues" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://twitter.com/ruchikaSjv"><img src="https://avatars.githubusercontent.com/u/32259133?v=4" width="100px;" alt=""/><br /><sub><b>Ruchika Gupta</b></sub></a><br /><a href="https://github.com/GeekyAnts/sample-supply-chain-ethereum" title="Code">💻</a> <a href="https://geekyants.github.io/sample-supply-chain-ethereum/" title="Documentation">📖</a> <a href="https://github.com/GeekyAnts/sample-supply-chain-ethereum/issues" title="Maintenance">🚧</a></td>
+  </tr>
+  </table>
+
 # How frontend works
 
-## Pfizer Home
+### Pfizer Home
 
 <br>
 <img src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/home.png?raw=true"><br>
 <br>
 
-## Pfizer Products
+### Pfizer Products
 
 <br>
 <img src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/products.png?raw=true"><br>
 <br>
 
-## Add Users according to Role and View all added Users
+### Add Users according to Role and View all added Users
 
 <br>
 <img src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/add-view-users.png?raw=true"><br>
 <br>
 
-## Product Add Form by Manufacturer
+### Product Add Form by Manufacturer
 
 <br>
 <img src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/addproduct-1.png?raw=true"><br>
@@ -230,13 +241,13 @@ _Note Revert back all your local configurations & configure it to point to rinke
 <img src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/addproduct-2.png?raw=true"><br>
 <br>
 
-## Products Sell according to User's role
+### Products Sell according to User's role
 
 <br>
 <img src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/sell_product.png?raw=true"><br>
 <br>
 
-## Products details and History
+### Products details and History
 
 <br>
 <img src="https://github.com/GeekyAnts/sample-supply-chain-ethereum/blob/main/assets/product-detail-history.png?raw=true"><br>
