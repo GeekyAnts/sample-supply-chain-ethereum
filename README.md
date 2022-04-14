@@ -130,10 +130,10 @@ By managing the supply chain, companies can cut excess costs and deliver product
 
 | **Event Name**           | **Params**                                                                          | **Description**                                                              |
 | ------------------------ | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| newUser                  | name<br>email<br>`role`'s index                                                     | When a new user is added, it gets triggered with the public details          |
-| lostUser                 | name<br>email<br>`role`'s index                                                     | When a user is removed from the system, this gets triggered                  |
-| newProduct               | manufacturerName,<br>scientificName,<br>barcodeId,<br>manDateEpoch,<br>expDateEpoch | Triggers when a new product is added to system by the manufacturer           |
-| productOwnershipTransfer | manufacturerName,<br>scientificName,<br>barcodeId,<br>buyerName,<br>buyerEmail      | When the product is sold to next level in the cycle then this gets triggered |
+| NewUser                  | name<br>email<br>`role`'s index                                                     | When a new user is added, it gets triggered with the public details          |
+| LostUser                 | name<br>email<br>`role`'s index                                                     | When a user is removed from the system, this gets triggered                  |
+| NewProduct               | manufacturerName,<br>scientificName,<br>barcodeId,<br>manDateEpoch,<br>expDateEpoch | Triggers when a new product is added to system by the manufacturer           |
+| ProductOwnershipTransfer | manufacturerName,<br>scientificName,<br>barcodeId,<br>buyerName,<br>buyerEmail      | When the product is sold to next level in the cycle then this gets triggered |
 
 ### Versions
 

@@ -15,8 +15,8 @@ contract Users {
     mapping(address => Types.UserDetails[]) internal supplierVendorsList;
     mapping(address => Types.UserDetails[]) internal vendorCustomersList;
 
-    event newUser(string name, string email, Types.UserRole role);
-    event lostUser(string name, string email, Types.UserRole role);
+    event NewUser(string name, string email, Types.UserRole role);
+    event LostUser(string name, string email, Types.UserRole role);
 
     /**
      * @dev To add a particular user to a particular role
@@ -26,7 +26,7 @@ contract Users {
         require(user.id_ != address(0));
         require(!has(user.role, user.id_), "Same user with same role exists");
         users[user.id_] = user;
-        emit newUser(user.name, user.email, user.role);
+        emit NewUser(user.name, user.email, user.role);
     }
 
     /**
@@ -129,7 +129,7 @@ contract Users {
         string memory name_ = users[account].name;
         string memory email_ = users[account].email;
         delete users[account];
-        emit lostUser(name_, email_, role);
+        emit LostUser(name_, email_, role);
     }
 
     // Internal Functions

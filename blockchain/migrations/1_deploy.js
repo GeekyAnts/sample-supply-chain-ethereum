@@ -8,6 +8,7 @@ module.exports = async function (deployer, network, accounts) {
     deployer.deploy(Types);
     deployer.link(Types, Users);
     deployer.deploy(Users);
+    deployer.link(Types, Products);
     deployer.deploy(Products);
     deployer.deploy(SupplyChain, "Suresh", "suresh@geekyants.com");
   } else {
@@ -15,6 +16,7 @@ module.exports = async function (deployer, network, accounts) {
     deployer.deploy(Types);
     deployer.link(Types, Users);
     deployer.deploy(Users);
+    deployer.link(Types, Products);
     deployer.deploy(Products);
     deployer.deploy(SupplyChain, "Suresh", "suresh@geekyants.com");
   }

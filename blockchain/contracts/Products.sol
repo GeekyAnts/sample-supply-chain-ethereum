@@ -17,7 +17,7 @@ contract Products {
 
     // Events
 
-    event newProduct(
+    event NewProduct(
         string name,
         string manufacturerName,
         string scientificName,
@@ -25,7 +25,7 @@ contract Products {
         uint256 manDateEpoch,
         uint256 expDateEpoch
     );
-    event productOwnershipTransfer(
+    event ProductOwnershipTransfer(
         string name,
         string manufacturerName,
         string scientificName,
@@ -83,7 +83,7 @@ contract Products {
             date: currentTime_
         });
         userLinkedProducts[msg.sender].push(product_.barcodeId);
-        emit newProduct(
+        emit NewProduct(
             product_.name,
             product_.manufacturerName,
             product_.scientificName,
@@ -125,7 +125,7 @@ contract Products {
         transferOwnership(msg.sender, partyId_, barcodeId_); // To transfer ownership from seller to buyer
 
         // Emiting event
-        emit productOwnershipTransfer(
+        emit ProductOwnershipTransfer(
             product_.name,
             product_.manufacturerName,
             product_.scientificName,
