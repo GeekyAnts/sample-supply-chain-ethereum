@@ -171,7 +171,7 @@ https://truffleframework.com/ganache
 
 5.  Migrating to ganache
 
-_Note depending on ganache cli/ui you my need to change truffle.js port settings Current listing on port : 7545_
+_Note depending on ganache cli/ui you my need to change truffle.js port settings Current listing on port : 7545_ you may need to change it to 8545 etc.
 
         truffle migrate --network development  --reset --all
 
